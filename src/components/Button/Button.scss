@@ -1,0 +1,38 @@
+@use '../../App.scss' as *;
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+
+
+    &.primary{
+        background-color: #2E09DB;
+        color: white;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: #a0a0a0;
+            color: #2E09DB;
+        }
+    }
+    &.secondary{
+        background-color: #efefef;
+        color: #2E09DB;
+    }
+
+    @include desktop-sm{
+        padding: 0.6rem 1.6rem;
+        font-size: 0.8rem;
+    }
+    @include mobile{
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        border-radius: 0.4rem;
+    }
+}

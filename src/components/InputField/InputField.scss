@@ -1,0 +1,49 @@
+@use '../../App.scss' as *;
+
+.input{
+    width: 100%;
+    & > h2{
+        color: #2E09DB;
+        margin-bottom: 0.7rem;
+        
+        font-size: 1.6rem;
+        @include desktop-sm{
+            font-size: 1.2rem;
+        }
+    }
+    & > .invisible{
+        color: #a6a6a6;
+        font-size: 1.3rem;
+        @include desktop-sm{
+            font-size: 1rem;
+        }
+    }
+    & > input{
+        border: 1px solid gray;
+        border-radius: 0.8rem;
+        padding: 1rem;
+        width: 100%;
+        outline: none;
+        font-size: 1rem;
+        @include desktop-sm{
+            font-size: 0.8rem;
+        }
+        &::placeholder{
+            font-size: 1rem;
+
+            @include desktop-sm{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    &__error{
+        & > h2 {
+            transition: all 0.3s ease;
+            color: red !important;
+        }
+        & > input{
+            border: 1px solid red;
+            transition: all 0.3s ease;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@use '../../App.scss' as *;
+
+.profile{
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & > h1{
+        text-transform: capitalize;
+    }
+    & > * ~ *{
+        margin-top: 1.5rem;
+    }
+    &__btn{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        & > * ~ *{
+            margin-left:1rem;
+        }
+        @include mobile-sm{
+            justify-content: center;
+        }
+    }
+    &__messError{
+        position: absolute;
+        top: -1.2rem;
+        left: 0;
+        color: red;
+        font-size: 0.8rem;
+        opacity: 0;
+        transition: all 0.3s ease;
+        @include desktop-sm{
+            font-size: 0.6rem;
+        }
+        @include tablet{
+            top: -1.5rem;
+        }
+       &.activeMessErr{
+        opacity: 1;
+       }
+    }
+    &__messSuccess{
+        position: absolute;
+        top: -1.2rem;
+        left: 0;
+        color: green;
+        font-size: 0.8rem;
+        opacity: 0;
+        transition: all 0.3s ease;
+        @include desktop-sm{
+            font-size: 0.6rem;
+        }
+        @include tablet{
+            top: -1.5rem;
+        }
+       &.activeMessSuccess{
+        opacity: 1;
+       }
+    }
+}
