@@ -6,4 +6,5 @@
 Website được build bằng ReactJS + Typescript + SCSS
 
 - Tài khoản : admin@gmail.com
--Mật khẩu : admin@123
+
+- Mật khẩu : admin@123
