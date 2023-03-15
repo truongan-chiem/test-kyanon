@@ -4,3 +4,7 @@
 3. Sau đó chạy lệnh "npm start" để chạy source ở [http://localhost:3000](http://localhost:3000/)
 # Thông tin
 Website được build bằng ReactJS + Typescript + SCSS
+
+
+Tài khoản : admin@gmail.com
+Mật khẩu : admin@123
